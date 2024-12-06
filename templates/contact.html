@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+  <section class="contact-content">
+    <br>
+    <center><h1>Meet Our Team</h1></center>
+
+    <div class="team-grid">
+      <!-- Team Member 1 -->
+
+      <!-- Team Member 2 -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/Rakshit.jpg') }}" alt="Rakshit Gupta" class="profile-pic">
+        <h3>Rakshit Gupta</h3>
+        <p>Email: 2021a1r050@mietjammu.in</p>
+        <p>7th CSE, MIET Jammu</p>
+        <a href="https://www.linkedin.com/in/rakshit9/" class="linkedin-link">LinkedIn</a>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/Ayushmaan.jpg') }}" alt="Ayushmaan Singh Jamwal" class="profile-pic">
+        <h3>Ayushmaan Singh Jamwal</h3>
+        <p>Email: 2021a1r052@mietjammu.in</p>
+        <p>7th CSE, MIET Jammu</p>
+        <a href="https://www.linkedin.com/in/ayushmaansj/" class="linkedin-link">LinkedIn</a>
+      </div>
+
+
+      <!-- Team Member 3 -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/Ankush.jpg') }}" alt="Ankush Raina" class="profile-pic">
+        <h3>Ankush Raina</h3>
+        <p>Email: 2021a1r059@mietjammu.in</p>
+        <p>7th CSE, MIET Jammu</p>
+        <a href="https://www.linkedin.com/in/ankushraina04/" class="linkedin-link">LinkedIn</a>
+      </div>
+
+    </div>
+  </section>
+{% endblock %}

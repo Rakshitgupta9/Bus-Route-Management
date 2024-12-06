@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %} | Bus Management System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" type="image/x-icon" href="/static/images/bus.png">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Bus Management</div>
+    <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('booking') }}">Bus Booking</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        <li><a href="{{ url_for('my_bookings') }}">My Bookings</a></li> <!-- New Link -->
+        <li><a href="{{ url_for('profile') }}">Profile</a></li>
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
+
+  
+
+  <!-- Content Section (to be extended by each page) -->
+  <div class="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section contact-info">
+        <h3>Contact Us</h3>
+        <p>Address: Model Institute of Engineering and Technology (MIET), Jammu</p>
+        <p>Email: 202a1r050@mietjammu.in</p>
+        <p>Phone: +919086304908</p>
+      </div>
+
+      <div class="footer-section important-links">
+        <h3>Useful Links</h3>
+        <a href="tc.html">Terms & Conditions</a>
+        <a href="policy.html">Privacy Policy</a>
+        <a href="#">Documentation</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Bus Management System | Developed by 7th CSE, MIET Jammu</p>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+
+  </script>
+
+</body>
+</html>

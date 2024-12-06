@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Booking{% endblock %}
+
+{% block content %}
+<section class="booking-content">
+  <h1>Book Your Bus Seat</h1>
+  <form id="booking-form" method="POST">
+    <!-- Map Section -->
+    <div id="map" style="height: 400px; margin-bottom: 20px;"></div>
+
+    <div class="form-group">
+      <label for="start-location">Start Location:</label>
+      <input type="text" id="start-location" name="start_location" readonly required>
+    </div>
+
+    <div class="form-group">
+      <label for="end-location">End Location:</label>
+      <input type="text" id="end-location" name="end_location" readonly required>
+    </div>
+
+    <div class="form-group">
+      <label for="distance">Distance (km):</label>
+      <input type="text" id="distance" name="distance" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price (₹):</label>
+      <input type="text" id="price" name="price" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+
+    <div class="form-group">
+      <label for="time">Select Time:</label>
+      <select id="time" name="time" required>
+        <!-- Options will be filled by JavaScript -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn">Book Now</button>
+    </div>
+  </form>
+</section>
+{% endblock %}
