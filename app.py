@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
 # MongoDB connection configuration
-app.config['MONGO_URI'] = 'mongodb+srv://2021a1r050:gupta%401@bus.dtimg.mongodb.net/bus?retryWrites=true&w=majority&appName=bus'
+app.config['MONGO_URI'] = 'Your_API'
 mongo = PyMongo(app)
 
 # Home route (Login/Register page)
