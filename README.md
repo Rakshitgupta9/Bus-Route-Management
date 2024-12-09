@@ -111,8 +111,8 @@ Here are some screenshots of the application in action:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Rakshitgupta9/bus-management-system.git
-cd bus-management-system
+git clone https://github.com/Rakshitgupta9/Bus-Route-Management.git
+cd Bus-Route-Management
 ```
 
 ### 2. Install required libraries
