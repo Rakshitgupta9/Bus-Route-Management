@@ -128,7 +128,7 @@ pip install Flask flask_pymongo werkzeug
 Ensure you have a MongoDB database set up on MongoDB Atlas. You can use the following URI format in your `app.py`:
 
 ```python
-app.config['MONGO_URI'] = 'mongodb+srv://<username>:<password>@<cluster_name>/bus?retryWrites=true&w=majority'
+app.config['MONGO_URI'] = 'Your_API'
 ```
 
 Replace `<username>`, `<password>`, and `<cluster_name>` with your MongoDB Atlas credentials.
@@ -170,7 +170,7 @@ Visit `http://localhost:5000` in your browser to access the Bus Management Syste
 
 Created by [Rakshit Gupta](https://www.linkedin.com/in/rakshit9/)
 
-- Email: [2021a1r050@mietjammu.in](mailto:2021a1r050@mietjammu.in)
-- GitHub: [Rakshitgupta9](https://github.com/Rakshitgupta9)
-
+📧 Email: 2021a1r050@mietjammu.in
+🔗 LinkedIn: https://www.linkedin.com/in/rakshit9/
+🐙 GitHub: https://github.com/Rakshitgupta9
 ---
