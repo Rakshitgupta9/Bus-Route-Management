@@ -170,7 +170,7 @@ Visit `http://localhost:5000` in your browser to access the Bus Management Syste
 
 Created by [Rakshit Gupta](https://www.linkedin.com/in/rakshit9/)
 
-📧 Email: 2021a1r050@mietjammu.in
-🔗 LinkedIn: https://www.linkedin.com/in/rakshit9/
+📧 Email: 2021a1r050@mietjammu.in<br>
+🔗 LinkedIn: https://www.linkedin.com/in/rakshit9/ <br>
 🐙 GitHub: https://github.com/Rakshitgupta9
 ---
